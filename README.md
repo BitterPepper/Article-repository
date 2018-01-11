@@ -1,8 +1,13 @@
 
-Instruction (Running through an IDE):
+Instruction.
+Running through an IDE):
 - Open the project inside an IDE.
 - Import dependencies.
 - Run class com.articleRepository.service.JettyServer.
+- Go to the address http://localhost:8080/ in browser.
+Using maven.
+- mvn package
+- mvn exec:java
 - Go to the address http://localhost:8080/ in browser.
 
 Details:
