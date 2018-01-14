@@ -12,7 +12,7 @@ public class MemoryArticleDao implements ArticleDao {
     private Map<String, String> articles = new ConcurrentHashMap<>();
 
     @Override
-    public synchronized void addArticle(String key, String article) {
+    public void addArticle(String key, String article) {
         articles.put(key, article);
     }
 
