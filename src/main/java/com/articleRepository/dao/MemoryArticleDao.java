@@ -1,14 +1,15 @@
 package com.articleRepository.dao;
 
-import com.articleRepository.dao.ArticleDao;
-
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class MemoryArticleDao implements ArticleDao {
 
-    private Map<String, String> articles = new HashMap<String, String>();
+    private Map<String, String> articles = new ConcurrentHashMap<>();
 
     @Override
     public synchronized void addArticle(String key, String article) {
